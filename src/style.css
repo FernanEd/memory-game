@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*
+  blue #24c
+  purple #93c
+  red #b24
+  green #284
+  pink #b59
+  orange #c61
+  golden #b83
+  black #223;
+*/
+
+:root {
+  --primary: #639;
+  --secondary: #6c757d;
+  --dark: #343a40;
+  --light: #f8f9fa;
+  --link: #17a2b8;
+
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+#credits {
+  width: 100%;
+  text-align: center;
+  color: var(--light);
+  background-color: var(--dark);
+  padding: 1em 0;
+}
+
+#credits p {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#root {
+  background-image: url('https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png');
+  background-size: auto 100%;
+  min-height: 100vh;
+
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+
+#scoreboard {
+  background-image: url('./tilesets/large-textbox.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  padding: 2em;
+
+  margin: auto;
+  max-width: 480px;
+  max-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5em;
+  color: #6a6778;
+
+  box-sizing: border-box;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  padding-top: 2em;
+}
+
+.card {
+  background-image: url('./tilesets/small-textbox.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding: 1em;
+
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  box-sizing: border-box;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  margin: auto;
+  margin-top: 2em;
+  background-image: url('./tilesets/button.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 1em;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  outline: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2em;
+  color: white;
+
+  cursor: pointer;
+  box-sizing: border-box;
+
+  transition: filter 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#instructions {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  margin-bottom: 2em;
+}
